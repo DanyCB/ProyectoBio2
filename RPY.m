@@ -31,14 +31,14 @@ arduinoObj.UserData.Data = [];
 % Para leer el puerto serie el número de veces deseado, llamando a la
 % función RPYData
 i=1;
-while(i<5000)
+while(i<1000)
     readRPYData(arduinoObj);
     i=i+1;
 end
 
 % Imprime los datos que se van leyendo
-plot(arduinoObj.USerData.Data(:,1)); % Roll
-hold on;
-plot(arduinoObj.USerData.Data(:,2),'r'); % Pitch
-hold on;
-plot(arduinoObj.USerData.Data(:,3),'g'); % Yaw
+plot(arduinoObj.UserData.Data(:,1)); % Roll
+%hold on;
+%plot(arduinoObj.USerData.Data(:,2),'r'); % Pitch
+%hold on;
+%plot(arduinoObj.USerData.Data(:,3),'g'); % Yaw
