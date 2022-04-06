@@ -1,6 +1,6 @@
 % Inicia comunicación por puerto serie indicando el puerto y la 
 % velocidad de comunicación
-arduinoObj = serialport("/dev/cu.usbserial-0001",57600); 
+arduinoObj = serialport("/dev/cu.usbserial-0001",115200); 
 
 % Indica el caracter con el que terminar una línea en puerto serie
 configureTerminator(arduinoObj,"CR/LF");

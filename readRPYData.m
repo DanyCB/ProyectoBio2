@@ -19,7 +19,7 @@ src.UserData.Count = src.UserData.Count + 1;
 % callbacks y muestra los datos
 if src.UserData.Count > 10
     configureCallback(src, "off");
-    %plot(src.UserData.Data(2:end));
+    plot(src.UserData.Data(2:end));
 end
 
 end
