@@ -34,10 +34,10 @@ while(i<1000)
 end
 
 % Imprime los datos que se van leyendo
-plot(arduinoObj.UserData.Data(:,1), 'c'); % Roll
+plot(arduinoObj.UserData.Data(:,1), 'c'); 
 %hold on;
 figure(2);
-plot(arduinoObj.USerData.Data(:,2),'r'); % Pitch
+plot(arduinoObj.USerData.Data(:,2),'r'); 
 %hold on;
 figure(3);
-plot(arduinoObj.USerData.Data(:,3),'t'); % Yaw
+plot(arduinoObj.USerData.Data(:,3),'t'); 
