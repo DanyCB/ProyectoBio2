@@ -13,13 +13,17 @@ src.UserData.Data(size(src.UserData.Data,1)+1,:) = data';
 
 % Actualiza el valor del contador del puerto serie
 src.UserData.Count = src.UserData.Count + 1;
-% write(src,"s","string");
 
 % Si el contador llega a 1001 datos recogidos de Arduino, apaga los
 % callbacks y muestra los datos
-if src.UserData.Count > 10
+if src.UserData.Count > 1001
     configureCallback(src, "off");
-    plot(src.UserData.Data(2:end));
+    figure(1);
+    plot(src.UserData.Data(:,1),'c');
+figure(2);
+plot(src.UserData.Data(:,2),'r');
+figure(3);
+plot(src.UserData.Data(:,3),'t')
 end
 
 end
