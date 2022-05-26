@@ -1,3 +1,4 @@
+
 % Inicia comunicación por puerto serie indicando el puerto y la 
 % velocidad de comunicación
 arduinoObj = serialport("COM3",9600); 
@@ -41,4 +42,8 @@ hold on;
 plot(arduinoObj.UserData.Data(:,1)); % Roll
 hold on;
 plot(arduinoObj.UserData.Data(:,2),'r'); % Pitch
+
 %plot(arduinoObj.USerData.Data(:,3),'g'); % Yaw
+
+%plot(arduinoObj.USerData.Data(:,3),'g'); % Yaw
+
