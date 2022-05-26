@@ -1,6 +1,6 @@
 % Inicia comunicación por puerto serie indicando el puerto y la 
 % velocidad de comunicación
-arduinoObj = serialport("/dev/cu.usbserial-0001",115200); 
+arduinoObj = serialport("COM3",9600); 
 
 % Indica el caracter con el que terminar una línea en puerto serie
 configureTerminator(arduinoObj,"CR/LF");
@@ -37,8 +37,8 @@ while(i<1000)
 end
 
 % Imprime los datos que se van leyendo
+hold on;
 plot(arduinoObj.UserData.Data(:,1)); % Roll
-%hold on;
-%plot(arduinoObj.USerData.Data(:,2),'r'); % Pitch
-%hold on;
+hold on;
+plot(arduinoObj.UserData.Data(:,2),'r'); % Pitch
 %plot(arduinoObj.USerData.Data(:,3),'g'); % Yaw
