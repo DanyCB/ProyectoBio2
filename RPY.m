@@ -37,11 +37,15 @@ while(i<1000)
     i=i+1;
 end
 
+ rodilla = arduinoObj.UserData.Data(:,1);
+ tobillo = arduinoObj.UserData.Data(:,2);
+
+
+
 % Imprime los datos que se van leyendo
-hold on;
-plot(arduinoObj.UserData.Data(:,1)); % Roll
-hold on;
-plot(arduinoObj.UserData.Data(:,2),'r'); % Pitch
+% plot(arduinoObj.UserData.Data(:,1)); % Roll
+% hold on;
+% plot(arduinoObj.UserData.Data(:,2),'r'); % Pitch
 
 %plot(arduinoObj.USerData.Data(:,3),'g'); % Yaw
 
